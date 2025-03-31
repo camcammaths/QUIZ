@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Brevet</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Quiz - Les Multiples</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="quiz-container">
-        <h1>Quiz Brevet</h1>
-        <p id="question"></p>
-        <div id="answers"></div>
-        <button id="next-btn">Suivant</button>
-        <p id="score"></p>
+
+    <div class="quiz-container">
+        <h1>🧮 Quiz : Les Multiples</h1>
+        <div id="quiz">
+            <p id="question"></p>
+            <div id="answers"></div>
+            <button id="next-btn">Suivant</button>
+        </div>
+        <div id="result" class="hidden">
+            <h2>🎉 Quiz terminé !</h2>
+            <p id="score"></p>
+            <button onclick="restartQuiz()">🔄 Rejouer</button>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
